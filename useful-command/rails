@@ -1,3 +1,6 @@
 # when get newer version run
 $ rake db:migrate
 $ rake db:seed
+
+# start site by this command
+$ rails s
