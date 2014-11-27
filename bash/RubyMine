@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# I write this bash file to run RubyMine application in my terminal
+
+# this line go to where executable file is
+cd "/home/sosin/Downloads/package/RubyMine-7.0/bin"
+
+#this line run RubyMine
+./rubymine.sh
