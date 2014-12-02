@@ -1,0 +1,8 @@
+#!/bin/bash
+# this program must run as root and
+# mount my shared partition
+
+# mount shared folder
+mount /dev/sda3 /media/share_folder
+
+echo "I do that , kiss , kiss"
