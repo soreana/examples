@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#go to activator directory
+cd "/usr/local/activator/activator-1.2.12"
+
+#run activator
+./activator $1
