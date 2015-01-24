@@ -1,0 +1,5 @@
+to remove DataBase
+  DROP DATABASE database-name
+  
+to drob sessions ( simply restart service )
+  sudo service postgresql restart
