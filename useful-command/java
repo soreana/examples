@@ -1,0 +1,2 @@
+# java xms
+java -Xmx2048m -Xms256m
