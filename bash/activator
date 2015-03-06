@@ -1,7 +1,4 @@
 #!/bin/bash
 
-#go to activator directory
-cd "/usr/local/activator/activator-1.2.12"
-
-#run activator
-./activator $1
+# $@ work like args in c and Java
+./home/sosin/activator/activator-1.2.12/activator $@
