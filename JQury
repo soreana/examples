@@ -1,0 +1,7 @@
+select 
+  $("tagName")      // select all tagName
+  $("#identifier")  // select element with id attribute identifier
+  $(".className")   // select all element with class className
+  
+  example:
+    $("p.a") // all element p with class attribute a
