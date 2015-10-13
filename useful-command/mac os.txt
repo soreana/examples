@@ -1,0 +1,8 @@
+# start ftp server
+sudo -s launchctl load -w /System/Library/LaunchDaemons/ftp.plist
+
+# stop ftp server
+sudo -s launchctl unload -w /System/Library/LaunchDaemons/ftp.plist
+
+# disable AirPlay Mirroring
+sudo chmod 000 /System/Library/CoreServices/AirPlayUIAgent.app/Contents/MacOS/AirPlayUIAgent
