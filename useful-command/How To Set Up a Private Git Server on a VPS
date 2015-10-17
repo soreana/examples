@@ -1,0 +1,26 @@
+#Create the SSH Key Pair
+ssh-keygen -C "youremail@mailprovider.com"
+
+#Setup a Git User and Install Git on your VPS
+sudo useradd git
+sudo passwd git
+sudo aptitude install git
+
+#Add your SSH Key to the Access List
+su git
+mkdir ~/.ssh && touch ~/.ssh/authorized_keys
+cat .ssh/id_rsa.pub | ssh user@123.45.67.89 "cat >> ~/.ssh/authorized_keys"
+// can see result if every thing was good
+cat ~/.ssh/authorized_keys
+
+#####################  Setup a Local Repository
+git init --bare my-project.git
+
+#Using your Git Server from your Local Computer
+git remote set-url origin git@git.droplet.com:my-project.git
+// first time 
+git init && git remote add origin git@git.droplet.com:my-project.git
+
+// another user
+mkdir user1 user2
+git remote add origin git@git.droplet.com:user1/user-project.git
